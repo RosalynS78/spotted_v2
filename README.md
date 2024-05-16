@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Spotted v2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](READMEdocs/readMeLogo.jpg)
 
-## Available Scripts
+The purpose of Spotted is to help reunite lost pets with their owners and maybe even help abandoned pets find new homes.
 
-In the project directory, you can run:
+The function is to let users post lost pets or found pets with a description, photo, last seen date and location last seen.
 
-### `npm start`
+- Create lost or found pet
+- Read active listings of lost/found
+- Update information on lost/found pets
+- Delete posts when no longer needed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*extra features*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- printable pdf flyer
+- generate qr code
 
-### `npm test`
+*future planning*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- post onto social media (facebook) to reach more viewers
+- google maps api for location tracking
+- microchip local shelter database api
 
-### `npm run build`
+## Flowchart
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Flowchart](READMEdocs/flowchart.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Table
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ~~[Rough Draft Table](READMEdocs/tableRough.jpg)~~
 
-### `npm run eject`
+mysql Reverse Engineer
+Redo primary and foreign keys
+![Table](READMEdocs/tempTable.jpg)
+![tempTable](READMEdocs/tableReverse.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Database
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Users Table
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![users_table](READMEdocs/users_table.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pet Table
 
-## Learn More
+![pet_table](READMEdocs/pet_table.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### QR Table
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![qr_table](READMEdocs/qr_table.jpg)
 
-### Code Splitting
+### SQL Statements for Table Creation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ~~[sql statements commands the mockup](READMEdocs/sql_statements.txt)~~
+- !works [qrTable first draft](sql/qrTable.sql)
+- !works [petsType first draft](sql/petsType.sql)
+- !works [petsFound first draft](sql/petsFound.sql)
+- !works [petsMissing first draft](sql/petsMissing.sql)
+- !works [petTable first draft](sql/petTable.sql)
+- !works [usersTable first draft](sql/usersTable.sql)
 
-### Analyzing the Bundle Size
+#### *routers*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- ~~[routing for users and pet and log in the mockup](READMEdocs/routers.txt)~~
+- [qr routers first draft](routers/qr.js)
+- [petsType routers first draft](routers/petsType.js)
+- !works[petsFound routers first draft](routers/petsFound.js)
+- !works[petsMissing routers first draft](routers/petsMissing.js)
+- !works[pets routers first draft](routers/pets.js)
+- !works [users routers first draft](routers/users.js)
+- !works [auth routers first draft](routers/auth.js)
 
-### Making a Progressive Web App
+#### *controllers*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [qr controllers first draft](controllers/qr.js)
+- [petsType controllers first draft](controllers/petType.js)
+- !works[petsFound controllers first draft](controllers/petsFound.js)
+- !works[petsMissing controllers first draft](controllers/petsMissing.js)
+- !works[pets controllers first draft](controllers/pets.js)
+- !works [users controllers first draft](controllers/users.js)
+- !works [auth controllers first draft](controllers/auth.js)
 
-### Advanced Configuration
+## Wireframe
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+*Landing Page Mockup* `</br>`
 
-### Deployment
+![landing page mockup](READMEdocs/landingPage.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+*Wireframe Mockup - First Draft* `</br>`
 
-### `npm run build` fails to minify
+![wireframe first draft](READMEdocs/wireframe.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Tech Stacks**
+
+* Node.js
+* nodemon
+* MySQL2
+* express
+* express-jwt
+* jsonwebtoken
+* jwks-rsa
+* bcrypt
+* dotenv
+* axios
+* ReactJS
+* Docker
+~~* auth0~~
+~~* Heroku~~
+~~* JawsDB MySQL~~
