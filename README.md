@@ -92,18 +92,21 @@ Redo primary and foreign keys
 
 ## **Tech Stacks**
 
-* Node.js
+* mui
+* emotion
+* node.js
 * nodemon
-* MySQL2
+* mysql2
 * express
 * express-jwt
-* jsonwebtoken
-* jwks-rsa
-* bcrypt
+~~* jsonwebtoken~~
+~~* jwks-rsa~~
+~~* bcrypt~~
 * dotenv
 * axios
-* ReactJS
-* Docker
+* react.js
+* gh-pages
+* docker
 ~~* auth0~~
-~~* Heroku~~
-~~* JawsDB MySQL~~
+* heroku 
+* jawsDB mysql
