@@ -106,8 +106,8 @@ Redo primary and foreign keys
 * docker
 * heroku 
 * jawsDB mysql
-~~* auth0~~
-~~* jsonwebtoken~~
-~~* jwks-rsa~~
-~~* bcrypt~~
+* ~~* auth0~~
+* ~~* jsonwebtoken~~
+* ~~* jwks-rsa~~
+* ~~* bcrypt~~
 
