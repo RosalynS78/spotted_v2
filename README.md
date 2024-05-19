@@ -82,11 +82,11 @@ Redo primary and foreign keys
 
 ## Wireframe
 
-*Landing Page Mockup* `</br>`
+*Landing Page Mockup* 
 
 ![landing page mockup](READMEdocs/landingPage.jpg)
 
-*Wireframe Mockup - First Draft* `</br>`
+*Wireframe Mockup - First Draft* 
 
 ![wireframe first draft](READMEdocs/wireframe.jpg)
 
