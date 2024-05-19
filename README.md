@@ -99,14 +99,15 @@ Redo primary and foreign keys
 * mysql2
 * express
 * express-jwt
-~~* jsonwebtoken~~
-~~* jwks-rsa~~
-~~* bcrypt~~
 * dotenv
 * axios
 * react.js
 * gh-pages
 * docker
-~~* auth0~~
 * heroku 
 * jawsDB mysql
+~~* auth0~~
+~~* jsonwebtoken~~
+~~* jwks-rsa~~
+~~* bcrypt~~
+
