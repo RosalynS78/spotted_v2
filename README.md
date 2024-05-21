@@ -104,8 +104,12 @@ Redo primary and foreign keys
 * react.js
 * gh-pages
 * docker
-* heroku 
-* jawsDB mysql
+#
+heroku no longer offer free tier
+* ~~* heroku~~ 
+* ~~* jawsDB mysql~~
+#
+used jwt instead for authentication
 * ~~* auth0~~
 * ~~* jsonwebtoken~~
 * ~~* jwks-rsa~~

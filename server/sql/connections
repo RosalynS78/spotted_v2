@@ -1,6 +1,30 @@
 require('dotenv').config()
 const mysql = require('mysql2')
 
+// jawsdb
+// class Connection {
+//   constructor() {
+//     if (!this.pool) {
+//       console.log('creating mysql connection...')
+//       this.pool = mysql.createPool({
+//         connectionLimit: 100,
+//         host: process.env.DB_HOST,
+//         user: process.env.DB_USER,
+//         password: process.env.DB_PASSWORD,
+//         database: process.env.DB_DATABASE,
+//         port: process.env.DB_PORT
+//       })
+
+//       return this.pool
+//     }
+
+//     return this.pool
+//   }
+// }
+
+// const instance = new Connection()
+
+module.exports = instance;
 
 class Connection {
   constructor() {
@@ -8,11 +32,11 @@ class Connection {
       console.log('creating mysql connection...')
       this.pool = mysql.createPool({
         connectionLimit: 100,
-        host: process.env.DB_HOST,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_DATABASE,
-        port: process.env.DB_PORT
+        PGHOST: process.env.localhost,
+        PGUSER: process.env.USER,
+        PGPASSWORD: process.env.nul,
+        PGDATABASE: process.env.USER,
+        PGPORT: process.env.PORT
       })
 
       return this.pool
