@@ -2,5 +2,7 @@
 
 Frontend -
 
-changed from Heroku to Docker hosting
+changed from Heroku to Docker-hosting
+create container in Docker with Compose
+-
 using react.js and mui for styling
