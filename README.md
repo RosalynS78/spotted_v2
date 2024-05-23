@@ -82,11 +82,11 @@ Redo primary and foreign keys
 
 ## Wireframe
 
-*Landing Page Mockup* 
+*Landing Page Mockup*
 
 ![landing page mockup](READMEdocs/landingPage.jpg)
 
-*Wireframe Mockup - First Draft* 
+*Wireframe Mockup - First Draft*
 
 ![wireframe first draft](READMEdocs/wireframe.jpg)
 
@@ -103,15 +103,17 @@ Redo primary and foreign keys
 * axios
 * react.js
 * gh-pages
-* docker
-#
+* docker - why docker/ best analogy its like a shipping container but for software. can hold any part of your software and deliver it anywhere you deploy. best part is the fact that no matter where you deploy this docker container, it ensures that your application will run the same everywhere. this means its easy for developers to produce, develop, and share application. *learning curb - the idea of creating a docker image.*
+* docker compose - for multi-container apps.
+
 heroku no longer offer free tier
-* ~~* heroku~~ 
+
+* ~~* heroku~~
 * ~~* jawsDB mysql~~
-#
+
 used jwt instead for authentication
+
 * ~~* auth0~~
 * ~~* jsonwebtoken~~
 * ~~* jwks-rsa~~
 * ~~* bcrypt~~
-
