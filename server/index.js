@@ -12,10 +12,15 @@ app.use(express.static("public"));
 
 
 const cors = require('cors');
+
 // app.use(cors({
 //     origin: ['http://localhost:3000'],
 //     exposedHeaders: 'Authorization'
 // }));
+
+
+
+
 
 
 
@@ -44,11 +49,11 @@ app.use(function (req, res, next) {
 // );
 
 
-const { logger } = require('../middleware/index.js');
-const authRouter = require('../routes/auth');
-const usersRouter = require('../routes/users');
-const lostRouter = require('../routes/lost');
-const foundRouter = require('../routes/found');
+const { logger } = require('./middleware/index.js');
+const authRouter = require('./routes/auth.js');
+const usersRouter = require('./routes/users.js');
+const lostRouter = require('./routes/lost.js');
+const foundRouter = require('./routes/found.js');
 
 app.use(logger);
 app.use('/auth', authRouter);
@@ -63,7 +68,7 @@ app.get("/", (req, res) => {
   res.send("Hello! Page by " + process.env.developer);
 })
 
-let port = process.env.PORT || 4000;
-app.listen(port, () => {
-  console.log(`Web server is listening on port ${port}!`);
+const PORT = process.env.NODE_DOCKER_PORT || 4000;
+app.listen(PORT, () => {
+  console.log(`Web server is listening on port ${PORT}!`);
 });

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
     Table,
     TableContainer,
@@ -12,14 +12,14 @@ import {
     TablePagination,
     Box,
     Typography,
-    Button,
+   
 } from "@mui/material";
 
 import axios from "axios";
-import AddListingsLost from "./AddListingsLost";
+
 
 const ListingsLost = (props) => {
-    const navigate = useNavigate();
+  
 
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(5);
@@ -57,7 +57,13 @@ const ListingsLost = (props) => {
                 marginTop={20}
                 padding={5}
             >
-                <Typography variant="h6" component="div"><h2>Lost Pets</h2></Typography>
+                <Typography 
+                    variant="h6" 
+                    component="div"
+                    color={"white"}
+                >
+                    <h2>Lost Pets</h2>
+                </Typography>
             </Box>
             <Box
                 style={{ background: "#ffffff", color: "#000000", opacity: "0.9" }}

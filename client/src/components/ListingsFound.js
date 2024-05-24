@@ -58,7 +58,13 @@ const ListingsFound = (props) => {
                 marginTop={20}
                 padding={5}
             >
-                <Typography variant="h6" component="div"><h2>Found Pets</h2></Typography>
+                <Typography 
+                    variant="h6" 
+                    component="div"
+                    color={"white"}
+                >
+                    <h2>Found Pets</h2>
+                </Typography>
             </Box>
             <Box
                 style={{ background: "#ffffff", color: "#000000", opacity: "0.9" }}
