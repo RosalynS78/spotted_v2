@@ -9,7 +9,7 @@ import AddListingsFound from "./containers/AddListingsFound.";
 import ListingsFound from "./containers/ListingsFound";
 import DetailsFound from "./containers/DetailsFound";
 
-import Signup from "../../client/src/containers/Signup";
+import Signup from "./containers/Signup";
 // import Signup from "../../src/containers/Signup";
 import Login from "./containers/Login";
 import Home from "./containers/Home";
