@@ -43,8 +43,8 @@ const AddListingsLost = (props) => {
         console.log(state)
         console.log(cookies)
 
-        // axios.post('https://spotteddb.herokuapp.com/lost', {
-            axios.post("http://localhost:4000/lost", {
+        axios.post('https://spotteddb-v2.onrender.com/lost', {
+            // axios.post("http://localhost:4000/lost", {
             gender: state.gender,
             name: state.name,
             species: state.species,

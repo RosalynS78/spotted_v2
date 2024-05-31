@@ -27,8 +27,8 @@ const ListingsFound = (props) => {
 
     useEffect(() => {
 
-        // axios.get("https://spotteddb.herokuapp.com/found")
-            axios.get("http://localhost:4000/found")
+        axios.get("https://spotteddb-v2.onrender.com/found")
+            // axios.get("http://localhost:4000/found")
             .then(res => {
                 setEntry(res.data)
                 console.log(res)

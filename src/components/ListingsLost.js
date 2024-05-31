@@ -27,8 +27,8 @@ const ListingsLost = (props) => {
     const [entry, setEntry] = useState([]);
 
     useEffect(() => {
-        // axios.get("https://spotteddb.herokuapp.com/lost")
-            axios.get("http://localhost:4000/lost")
+        axios.get("https://spotteddb-v2.onrender.com/lost")
+            // axios.get("http://localhost:4000/lost")
             .then((res) => {
                 setEntry(res.data);
                 console.log(res);

@@ -34,8 +34,8 @@ const Signup = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(state);
-        // axios.post('https://spotteddb.herokuapp.com/auth/signup', {
-            axios.post("http://localhost:4000/auth/signup", {
+        axios.post('https://spotteddb-v2.onrender.com/auth/signup', {
+            // axios.post("http://localhost:4000/auth/signup", {
             username: state.username,
             email: state.email,
             password: state.password,

@@ -26,8 +26,8 @@ const DetailsLost = (props) => {
     const { id } = useParams();
 
     useEffect(() => {
-        // axios.get(`https://spotteddb.herokuapp.com/lost/${id}`)
-            axios.get("http://localhost:4000/found")
+        axios.get(`https://spotteddb-v2.onrender.com/lost/${id}`)
+            // axios.get("http://localhost:4000/found")
             .then((res) => {
                 setStatus(res.status);
                 setEntry(res.data);
