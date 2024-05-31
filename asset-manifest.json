@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/spotted_v2.git/static/css/main.aad85a7b.css",
-    "main.js": "/spotted_v2.git/static/js/main.ae13e7c5.js",
-    "static/media/front.jpg": "/spotted_v2.git/static/media/front.365bce4d97d203f8f5f6.jpg",
-    "static/media/bg.jpg": "/spotted_v2.git/static/media/bg.97b88ec1f0165fe92904.jpg",
-    "static/media/logo.png": "/spotted_v2.git/static/media/logo.836b1d1811fffaa522a8.png",
-    "index.html": "/spotted_v2.git/index.html",
-    "main.aad85a7b.css.map": "/spotted_v2.git/static/css/main.aad85a7b.css.map",
-    "main.ae13e7c5.js.map": "/spotted_v2.git/static/js/main.ae13e7c5.js.map"
+    "main.css": "/spotted_v2/static/css/main.0484a840.css",
+    "main.js": "/spotted_v2/static/js/main.b320adca.js",
+    "static/media/front.jpg": "/spotted_v2/static/media/front.365bce4d97d203f8f5f6.jpg",
+    "static/media/bg.jpg": "/spotted_v2/static/media/bg.97b88ec1f0165fe92904.jpg",
+    "static/media/logo.png": "/spotted_v2/static/media/logo.836b1d1811fffaa522a8.png",
+    "index.html": "/spotted_v2/index.html",
+    "main.0484a840.css.map": "/spotted_v2/static/css/main.0484a840.css.map",
+    "main.b320adca.js.map": "/spotted_v2/static/js/main.b320adca.js.map"
   },
   "entrypoints": [
-    "static/css/main.aad85a7b.css",
-    "static/js/main.ae13e7c5.js"
+    "static/css/main.0484a840.css",
+    "static/js/main.b320adca.js"
   ]
 }
