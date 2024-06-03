@@ -1,5 +1,5 @@
 import React from "react";
-
+import front from "../assets/front.jpg";
 
 import {
   Container,
@@ -14,29 +14,23 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 
+import { blueGrey } from '@mui/material/colors';
+
+const primary = blueGrey[50]; // #f44336
+
+
+
 
 
 const Home = (props) => {
   return (
     <div>
-      <Container maxWidth="sm">
+      <Container class="homeBox">
         <Box
           style={{ background: "#ffffff", color: "#000000", opacity: "0.9" }}
-          display="flex"
-          flex-direction={"column"}
-          maxWidth={600}
+          display="inline-block"
           alignItems="center"
           justifyContent={"center"}
-          margin="auto"
-          marginTop={50}
-          padding={5}
-          borderRadius={5}
-          boxShadow="5px 5px 10px #ccc"
-          sx={{
-            ":hover": {
-              boxShadow: "8px 8px 8px black",
-            },
-          }}
         >
           <div>
             <Typography variant="h4" padding={3}>
@@ -46,7 +40,6 @@ const Home = (props) => {
           <TableContainer>
             <Table>
               <TableHead>
-                <TableCell></TableCell>
                 <TableCell>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                   lectus tellus, vulputate ac lacinia id, consequat in ipsum.
@@ -64,20 +57,39 @@ const Home = (props) => {
                   nisi tortor, posuere ullamcorper suscipit tempor, tempus vel
                   nisl.
                 </TableCell>
+                <TableCell><span><img src={front} width="200" height="150" /></span></TableCell>
               </TableHead>
             </Table>
-            <div className="footer-icons">
+            {/* <div className="footer-icons">
               <a href="http://facebook.com"><FacebookIcon fontSize="medium" />
                 <InstagramIcon fontSize="medium" /></a>
               <a href="http://instagram.com"> </a>
               <a href="http://google.com"> <GoogleIcon fontSize="medium" /></a>
-            </div>
+            </div> */}
           </TableContainer>
         </Box>
-
-
       </Container>
+      <div class="bottomPara-1">
+        <Typography variant="h4">
+          <p>You Don't Have To Feel Helpless</p>
+        </Typography>
+      </div>
+      <div class="bottomPara-2">
+        <Typography variant="h6">
+          <p>Helping lost pets reunite with their families</p>
+        </Typography>
+      </div>
+      <div class="footer-icons" id="footerLink">
+        <span><a href="#"><FacebookIcon fontSize="large" /></a></span>
+        <span><a href="#"><InstagramIcon fontSize="large" /></a></span>
+        <span><a href="#"><GoogleIcon fontSize="large" /></a></span>
+      </div>
+
     </div>
+
+
+
+
   );
 };
 

@@ -3,11 +3,20 @@ body {
   flex-direction: column;
   height: 100%;
   background-image: url(./assets/bg.jpg);
-  border-image: fill 0 linear-gradient(#000, #0001  );
+  border-image: fill 0 linear-gradient(#0000008c, #0001);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.content {
+  margin: 5px;
+}
+
+.sLogo {
+  position: relative;
+  margin-top: 28px;
 }
 
 .logger {
@@ -16,7 +25,6 @@ body {
 }
 
 .login-form {
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -24,25 +32,42 @@ body {
   width: 60%;
 }
 
+.login-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.log {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.log:hover {
+  color: #90a4ae;
+}
+
 a {
-
   text-decoration: none;
-  color: inherit;
+  color: black;
 }
 
-.text-gray {
-  color: gray;
-
+a:hover,
+a:active,
+a:focus {
+  color: #90a4ae;
 }
+
 
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .nav-list-item {
-  margin: auto 15px;
+  margin: auto 5px;
 }
 
 .nav-list-item:hover {
@@ -55,6 +80,38 @@ a {
 
 .footer-icons {
   display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 
+.footer-icons a {
+  color: white;
+}
+
+.footer-icons a:hover,
+.footer-icons a:active,
+.footer-icons a:focus {
+  color: #90a4ae;
+}
+
+.homeBox {
+  margin: 5px;
+}
+
+.bottomPara-1 {
+  color: white;
+  display: flex;
   justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.bottomPara-2 {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+span + span {
+  margin-left: 30px;
 }

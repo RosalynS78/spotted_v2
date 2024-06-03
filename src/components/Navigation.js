@@ -10,15 +10,33 @@ const Navigation = (props) => {
     const loggedIn = document.cookie;
 
     return (
-        <div>
+        <div class="content">
+            <div className="sLogo">
+                <Logo />
+            </div>
+            <div className="login-btn">
+                <Button class="log"
+                    onClick={() => {
+                        document.cookie = cookie.serialize("loggedIn", null, {
+                            maxAge: 0,
+                        });
+                        document.cookie = cookie.serialize("jwt", null, {
+                            maxAge: 0,
+                        });
+                        document.cookie = cookie.serialize("userId", null, {
+                            maxAge: 0,
+                        });
+                        navigate("/login");
+                    }}
+                >
+                    {loggedIn ? "LOGOUT" : "LOGIN"}
+                </Button>
+            </div>
+
             <AppBar
-                style={{ background: "#ffffff", color: "#000000", opacity: "0.9" }}
+                style={{ background: "#ffffff", opacity: "0.9", height: "30px", justifyContent: "center", position: "relative" }}
             >
                 <Toolbar>
-                    <div>
-                        <Logo />
-                    </div>
-
                     <Typography variant="h6" style={{ flexGrow: "1" }}>
                         <ul className="nav-list">
                             <li className="nav-list-item">
@@ -47,26 +65,6 @@ const Navigation = (props) => {
                             <Button>
                                 <li className="nav-list-item">
                                     <Link to="/addlistingsfound">Report Found</Link>
-                                </li>
-                            </Button>
-
-                            <Button>
-                                <li
-                                    className="nav-list-item"
-                                    onClick={() => {
-                                        document.cookie = cookie.serialize("loggedIn", null, {
-                                            maxAge: 0,
-                                        });
-                                        document.cookie = cookie.serialize("jwt", null, {
-                                            maxAge: 0,
-                                        });
-                                        document.cookie = cookie.serialize("userId", null, {
-                                            maxAge: 0,
-                                        });
-                                        navigate("/login");
-                                    }}
-                                >
-                                    {loggedIn ? "LOGOUT" : "LOGIN"}
                                 </li>
                             </Button>
                         </ul>
