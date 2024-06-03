@@ -57,7 +57,7 @@ const Home = (props) => {
                   nisi tortor, posuere ullamcorper suscipit tempor, tempus vel
                   nisl.
                 </TableCell>
-                <TableCell><span><img src={front} width="200" height="150" /></span></TableCell>
+                <TableCell><span><img src={front} width="250" height="180" /></span></TableCell>
               </TableHead>
             </Table>
             {/* <div className="footer-icons">
