@@ -87,7 +87,7 @@ const Navigation = (props) => {
                 margin="auto"
             >
                 {document.cookie === "loggedIn=true" ? (
-                    <Typography variant="h6" color="white" padding={1}>
+                    <Typography variant="h6" color="primary" padding={1}>
                         Logged in as: <span>{props.users.username}</span>
                     </Typography>
                 ) : null}

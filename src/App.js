@@ -1,4 +1,5 @@
 import Navigation from './components/Navigation'
+import Home from './components/Home'
 import './App.css'
 import Router from './Router'
 import { BrowserRouter } from 'react-router-dom'
@@ -12,6 +13,7 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Navigation />
+        {/* <Home /> */}
         <Router />
       </BrowserRouter>
     </Provider>

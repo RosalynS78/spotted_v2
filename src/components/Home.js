@@ -18,10 +18,6 @@ import { blueGrey } from '@mui/material/colors';
 
 const primary = blueGrey[50]; // #f44336
 
-
-
-
-
 const Home = (props) => {
   return (
     <div>

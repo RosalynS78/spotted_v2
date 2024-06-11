@@ -43,7 +43,6 @@ const HomeA = (props) => {
                     <TableContainer>
                         <Table>
                             <TableHead>
-
                                 <img src={front} width="200" height="150" />
 
                                 <TableCell>

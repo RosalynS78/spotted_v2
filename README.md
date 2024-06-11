@@ -48,4 +48,7 @@ heroku no longer offer free tier
 * ~~* heroku~~
 
 ## **Backend**
-[SpottedDB_V2 ](https://github.com/RosalynS78/spottedDB_v2.git)
+[SpottedDB_v2 ](https://github.com/RosalynS78/spottedDB_v2.git)
+
+## **Spotted version 1.0 Frontend**
+[Spotted](https://github.com/RosalynS78/spotted.git)
