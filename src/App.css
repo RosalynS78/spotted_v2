@@ -8,10 +8,13 @@ body {
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
+
 }
 
 .content {
   margin: 5px;
+
+
 }
 
 .sLogo {
@@ -19,23 +22,33 @@ body {
   margin-top: 28px;
 }
 
+.greetings {
+  width: 99.4vw;
+}
+
 .logger {
   display: flex;
+
+
   text-align: center;
+  margin: 5px;
 }
 
 .login-form {
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+
+  width: 100vh;
   align-items: center;
-  margin: 50px auto;
-  width: 60%;
+
+
 }
+
 
 .login-btn {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 20px;
+
 }
 
 .log {
@@ -64,10 +77,12 @@ a:focus {
   list-style: none;
   display: flex;
   justify-content: center;
+  
 }
 
 .nav-list-item {
   margin: auto 5px;
+ 
 }
 
 .nav-list-item:hover {
@@ -80,8 +95,12 @@ a:focus {
 
 .footer-icons {
   display: flex;
+
   justify-content: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-icons a {
@@ -95,14 +114,18 @@ a:focus {
 }
 
 .homeBox {
-  margin: 5px;
+  display: flex;
+  margin: auto 5px;
+
 }
+
 
 .bottomPara-1 {
   color: white;
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+
 }
 
 .bottomPara-2 {
@@ -110,6 +133,7 @@ a:focus {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+ 
 }
 
 span + span {

@@ -51,8 +51,9 @@ const Login = (props) => {
     };
 
     return (
-        <div className="logger">
-            <Container maxWidth="sm">
+        <div>
+            {/* div className="logger" */}
+            {/* <Container maxWidth="sm">
                 <Box
                     style={{ background: "#ffffff", color: "#000000", opacity: "0.9" }}
                     display="flex"
@@ -70,15 +71,22 @@ const Login = (props) => {
                             boxShadow: "8px 8px 8px black",
                         },
                     }}
+                > */}
+            <Container class="logger">
+                <Box
+                    style={{ background: "#ffffff", color: "#000000", opacity: "0.9" }}
+                    display="inline-block"
+                    alignItems="center"
+                    justifyContent={"center"}
                 >
-                    <div>
+                    <div class="greetings">
                         <Typography variant="h4" padding={3}>
-                            Welcome
+                            <span> Welcome </span>
                         </Typography>
-                        <a href="http://facebook.com"><FacebookIcon fontSize="medium" />
+                        {/* <a href="http://facebook.com"><FacebookIcon fontSize="medium" />
                             <InstagramIcon fontSize="medium" /></a>
                         <a href="http://instagram.com"> </a>
-                        <a href="http://google.com"> <GoogleIcon fontSize="medium" /></a>
+                        <a href="http://google.com"> <GoogleIcon fontSize="medium" /></a> */}
                         <Typography variant="h6" padding={3}>
                             New? <br />
                             <Button>
@@ -128,6 +136,13 @@ const Login = (props) => {
                     </form>
                 </Box>
             </Container>
+
+            {/* <div class="footer-icons" id="footerLink">
+                <span><a href="#"><FacebookIcon fontSize="large" /></a></span>
+                <span><a href="#"><InstagramIcon fontSize="large" /></a></span>
+                <span><a href="#"><GoogleIcon fontSize="large" /></a></span>
+            </div> */}
+            
         </div>
     );
 };

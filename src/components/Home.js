@@ -1,19 +1,9 @@
 import React from "react";
 import front from "../assets/front.jpg";
-
-import {
-  Container,
-  Box,
-  Table,
-  TableHead,
-  TableContainer,
-  TableCell,
-  Typography,
-} from "@mui/material";
+import { Container, Box, Table, TableHead, TableContainer, TableCell, Typography } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
-
 import { blueGrey } from '@mui/material/colors';
 
 const primary = blueGrey[50]; // #f44336
@@ -21,6 +11,7 @@ const primary = blueGrey[50]; // #f44336
 const Home = (props) => {
   return (
     <div>
+      {/* The name className is used for this property instead of class because of conflicts with the "class" keyword in many languages which are used to manipulate the DOM */}
       <Container class="homeBox">
         <Box
           style={{ background: "#ffffff", color: "#000000", opacity: "0.9" }}
@@ -30,7 +21,7 @@ const Home = (props) => {
         >
           <div>
             <Typography variant="h4" padding={3}>
-              Welcome
+             <span class="greetings">Welcome</span> 
             </Typography>
           </div>
           <TableContainer>
@@ -75,11 +66,11 @@ const Home = (props) => {
           <p>Helping lost pets reunite with their families</p>
         </Typography>
       </div>
-      <div class="footer-icons" id="footerLink">
+      {/* <div class="footer-icons" id="footerLink">
         <span><a href="#"><FacebookIcon fontSize="large" /></a></span>
         <span><a href="#"><InstagramIcon fontSize="large" /></a></span>
         <span><a href="#"><GoogleIcon fontSize="large" /></a></span>
-      </div>
+      </div> */}
 
     </div>
 

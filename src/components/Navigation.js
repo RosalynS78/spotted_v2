@@ -2,20 +2,22 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
 import cookie from "cookie";
-
 import Logo from "../assets/Logo";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import GoogleIcon from "@mui/icons-material/Google";
 
 const Navigation = (props) => {
     const navigate = useNavigate();
     const loggedIn = document.cookie;
 
     return (
-        <div class="content">
+        <div className="content">
             <div className="sLogo">
                 <Logo />
             </div>
             <div className="login-btn">
-                <Button class="log"
+                <Button className="log"
                     onClick={() => {
                         document.cookie = cookie.serialize("loggedIn", null, {
                             maxAge: 0,
@@ -92,6 +94,11 @@ const Navigation = (props) => {
                     </Typography>
                 ) : null}
             </Box>
+            <div class="footer-icons" id="footerLink">
+        <span><a href="#"><FacebookIcon fontSize="large" /></a></span>
+        <span><a href="#"><InstagramIcon fontSize="large" /></a></span>
+        <span><a href="#"><GoogleIcon fontSize="large" /></a></span>
+      </div>
         </div>
     );
 };
